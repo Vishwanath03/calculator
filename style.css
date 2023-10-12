@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  width: 500px;
+  height: 600px;
+  padding: 20px;
+  background-color: yellowgreen;
+  border-radius: 5%;
+  box-shadow: 0px 0px 10px 10px rgb(104, 102, 102);
+}
+.name {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.name p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(224, 64, 64);
+  text-shadow: 5px 5px 5px rgb(96, 47, 47);
+  height: 50px;
+}
+.calc {
+  display: flex;
+  flex-direction: column;
+}
+.que_ans {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  gap: 5px;
+  padding: 10px;
+  width: auto;
+  height: 100px;
+}
+#question {
+  font-size: medium;
+  height: 35px;
+  /* border: 1px solid black; */
+  text-align: start;
+}
+#answer {
+  font-size: large;
+  height: 50px;
+  /* border: 1px solid black; */
+  margin-left: auto;
+}
+
+.control_btns {
+  display: grid;
+  grid-template-columns: repeat(4, 55px);
+  grid-template-rows: repeat(5, 40px);
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+  margin-top: 30px;
+}
+.control_btns button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -1px 2px 2px 2px grey;
+  line-height: 5px;
+  border-color: black;
+  background-color: rgb(81, 79, 79);
+  color: white;
+}
+button:active {
+  font-size: large;
+}
+
+#allclear,
+#brakets,
+#percent,
+#divide,
+#product,
+#subtract,
+#add {
+  background-color: blue;
+  border-color: blue;
+  color: rgb(205, 204, 202);
+}
+#equal {
+  background-color: rgb(100, 100, 243);
+  border-color: rgb(100, 100, 243);
+}
