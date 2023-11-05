@@ -41,6 +41,13 @@
   width: auto;
   height: 100px;
 }
+.que_ans input {
+  border: none;
+  background-color: antiquewhite;
+  outline: none;
+  margin-left: 20px;
+  caret-color: transparent;
+}
 #question {
   font-size: medium;
   height: 35px;
@@ -48,10 +55,11 @@
   text-align: start;
 }
 #answer {
-  font-size: large;
+  font-size: x-large;
   height: 50px;
+  text-align: right;
+  margin-right: 20px;
   /* border: 1px solid black; */
-  margin-left: auto;
 }
 
 .control_btns {
@@ -73,9 +81,9 @@
   font-size: medium;
   box-shadow: -1px 2px 2px 2px grey;
   line-height: 5px;
-  border-color: black;
   background-color: rgb(81, 79, 79);
   color: white;
+  border: none;
 }
 button:active {
   font-size: large;
@@ -89,10 +97,8 @@ button:active {
 #subtract,
 #add {
   background-color: blue;
-  border-color: blue;
   color: rgb(205, 204, 202);
 }
 #equal {
-  background-color: rgb(100, 100, 243);
-  border-color: rgb(100, 100, 243);
+  background-color: rgb(240, 115, 19);
 }

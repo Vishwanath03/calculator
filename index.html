@@ -19,52 +19,40 @@
       background-color: blueviolet;
     "
   >
-    <script src="script.js"></script>
     <div class="box">
       <div class="calc">
         <div class="name">
           <p>CALCULATOR</p>
         </div>
         <div class="que_ans">
-          <p id="question"></p>
-          <p type="number" id="answer"></p>
+          <input type="text" id="question" value="" />
+          <input type="text" id="answer" value="" />
         </div>
 
         <div class="control_btns">
-          <button id="allclear" onclick="audio.play();clearDisplay()">
-            AC
-          </button>
-          <button id="brakets" onclick="audio.play()">( )</button>
-          <button id="percent" onclick="audio.play()">%</button>
-          <button id="divide" onclick="audio.play();appendOperator('%')">
-            ÷
-          </button>
-
-          <button id="seven" onclick="audio.play(); appendDigit(7)">7</button>
-          <button id="eight" onclick="audio.play();appendDigit(8)">8</button>
-          <button id="nine" onclick="audio.play();appendDigit(9)">9</button>
-          <button id="product" onclick="audio.play();appendOperator('*')">
-            ×
-          </button>
-
-          <button id="four" onclick="audio.play();appendDigit(4)">4</button>
-          <button id="five" onclick="audio.play();appendDigit(5)">5</button>
-          <button id="six" onclick="audio.play();appendDigit(6)">6</button>
-          <button id="subtract" onclick="audio.play();appendOperator('-')">
-            –
-          </button>
-
-          <button id="one" onclick="audio.play();appendDigit(1)">1</button>
-          <button id="two" onclick="audio.play();appendDigit(2)">2</button>
-          <button id="three" onclick="audio.play();appendDigit(3)">3</button>
-          <button id="add" onclick="audio.play();appendOperator('+')">+</button>
-
-          <button id="zero" onclick="audio.play();appendDigit(0)">0</button>
-          <button id="dot" onclick="audio.play();appendDecimal()">•</button>
-          <button id="del" onclick="audio.play()">Del</button>
-          <button id="equal" onclick="song.play();evalexpr()">=</button>
+          <button id="allclear">AC</button>
+          <button id="bkt_open">(</button>
+          <button id="bkt_close">)</button>
+          <button id="divide">÷</button>
+          <button id="seven">7</button>
+          <button id="eight">8</button>
+          <button id="nine">9</button>
+          <button id="product">×</button>
+          <button id="four">4</button>
+          <button id="five">5</button>
+          <button id="six">6</button>
+          <button id="subtract">–</button>
+          <button id="one">1</button>
+          <button id="two">2</button>
+          <button id="three">3</button>
+          <button id="add">+</button>
+          <button id="zero">0</button>
+          <button id="dot">•</button>
+          <button id="del">Del</button>
+          <button id="equal">=</button>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
